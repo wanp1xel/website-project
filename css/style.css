@@ -383,7 +383,7 @@ width: 150px;
   }
   
   .loaded_hiding .preloader {
-    transition: 10s opacity;
+    transition: 2.5s opacity;
     opacity: 0;
   }
   
