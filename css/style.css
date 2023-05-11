@@ -55,11 +55,11 @@ nav a {
     transition: all 0.3s ease-in-out;
 }
 
-nav a:hover, nav a:focus {
+/*nav a:hover, nav a:focus {
     color: #fff;
     background: rgba(255, 255, 255, 0.2);
 }
-
+*/
 .header .text-animate {
     position: relative;
     width: 332px;
@@ -69,10 +69,10 @@ nav a:hover, nav a:focus {
     font-size: 33px;
     color: transparent;
     font-weight: 700;
-    -webkit-text-stroke: .7px var(--main-color);
+    --webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
+    --webkit-background-clip: text;
     background-position: 0 0;
     animation: logo 6s linear infinite;
     animation-delay: 2s;
@@ -99,11 +99,29 @@ nav a:hover, nav a:focus {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    position: relative;
 }
 
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--main-color);
+}
+
+.navbar a:hover:before {
+    width: 100%;
+}
+
+.navbar a::before {
+    transition: width 0.35s;
 }
 
 section {
@@ -115,11 +133,10 @@ section {
     display: flex;
     align-items: center;
     padding: 0 7%;
-    background: url(/images/win11-bg.png) no-repeat;
+    background: url('../images/win11-bg.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
-
 
 .home-content {
     max-width: 1000px;
