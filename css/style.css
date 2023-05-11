@@ -378,7 +378,7 @@ width: 150px;
     height: 100vh;
     z-index: 1001;
     overflow: visible;
-    background: #000 url('https://tenor.com/view/xp-gif-17171249685220166611.gif')  center;;
+    background: #000 url(/images/preloader.gif)  center;;
     transform: scale(240%);
   }
   
