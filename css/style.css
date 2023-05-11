@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: auto;
+    font-family: sans-serif;
+}
+
+:root {
+   --bg-color:  #081b29;
+   --second-bg-color: #112e42;
+   --text-color:#ededed;
+   --main-color: #00abf0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 7%;
+    background: rgb(0, 0, 0, .7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    padding: 5px 7px;
+    font-weight: bold;
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover, nav a:focus {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header .text-animate {
+    position: relative;
+    width: 332px;
+}
+
+.header .text-animate .logo {
+    font-size: 33px;
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: logo 6s linear infinite;
+    animation-delay: 2s;
+}
+
+
+.header .text-animate .logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+    animation: logoCursor 6s linear infinite;
+    animation-delay: 2s;
+}
+
+
+.navbar a {
+    font-size: 17px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 9% 20px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    background: url('/lab work/Website/images/photo2.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home-content {
+    max-width: 1000px;
+    position: relative;
+    width: 600px;
+}
+
+.home-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.3;
+}
+
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 53%;
+    height: 100%;
+    background: transparent;
+    transition: 2s;
+}
+
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
+
+.win{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background: url('/lab work/Website/images/win-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.win-img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.win-img img {
+    width: 70%;
+    border-radius: 6%;
+}
+
+.win-img .square-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 75%;
+    height: 75%;
+    border-radius: 7%;
+    border-left: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
+}
+
+
+
+.win-content {
+    text-align: center;
+}
+
+.win-content p {
+    font-size: 17px;
+    margin: 20px 0 30px;
+    line-height: 1.3;
+}
+
+.btn-box.btns {
+display: inline-block;
+width: 150px;
+}
+
+.btn-box.btns a::before {
+    background: black;
+}
+
+@keyframes logo {
+    0%,
+    10%,
+    100% {
+        background-position: -330px 0;
+    }
+    65%,
+    85% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes logoCursor {
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    65%,
+    78%,
+    85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%,
+    81% {
+        opacity: 0;
+    }
+}
+
+.footer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 7%;
+    background: rgb(0, 0, 0, .7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.footer_navbar a {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.footer_navbar a:hover,
+.footer_navbar a.active {
+    color: var(--main-color);
+}
+
+.footer p {
+    font-size: 12px;
+}
+.img-top {
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #0f3955;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 30%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+    font-size: 32px;
+    border-radius: 30%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.scroll-top:hover {
+    background-color: #0b5ed7;
+    color: #000;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #000;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1001;
+    overflow: visible;
+    background: #000 url('https://tenor.com/view/xp-gif-17171249685220166611.gif')  center;;
+    transform: scale(240%);
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 10s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+    opacity: 1;
+  }
