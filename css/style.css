@@ -115,7 +115,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 7%;
-    background: url(/images/photo2.png) no-repeat;
+    background: url(images/photo2.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -208,7 +208,7 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background: url(/images/win-1.jpg) no-repeat;
+    background: url(images/win-1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     padding-bottom: 60px;
