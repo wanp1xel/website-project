@@ -465,7 +465,7 @@ width: 150px;
 .main{
     width: 1130px;
     max-width: 95%;
-    margin:  auto;
+    margin:  100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -484,6 +484,13 @@ width: 150px;
     font-size: 40px;
     text-transform: capitalize;
     margin-bottom: 20px;
+}
+
+.about-text h5 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
 }
 
 .about-text p {
