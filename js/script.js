@@ -20,3 +20,8 @@ window.onload = function () {
     document.body.classList.remove('loaded_hiding');
   }, 2500);
 }
+
+window.onscroll = () => {
+  let header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 100);
+}

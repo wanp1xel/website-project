@@ -14,6 +14,8 @@
    --second-bg-color: #112e42;
    --text-color:#ededed;
    --main-color: #00abf0;
+   --linux: #DC461D;
+   --black: #000;
 }
 
 html {
@@ -32,12 +34,17 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 7%;
-    background: rgb(0, 0, 0, .7);
+    padding: 8px 7%;
+    /*background: rgb(0, 0, 0, .8);*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background: rgb(0, 0, 0, .8);
 }
 
 nav a {
@@ -55,11 +62,6 @@ nav a {
     transition: all 0.3s ease-in-out;
 }
 
-/*nav a:hover, nav a:focus {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-}
-*/
 .header .text-animate {
     position: relative;
     width: 332px;
@@ -162,7 +164,7 @@ section {
     display: flex;
     justify-content: space-between;
     width: 345px;
-    height: 50px;
+    height: 45px;
 }
 
 .btn-box .btn {
@@ -219,7 +221,7 @@ section {
     opacity: .8;
 }
 
-.win {
+.OS {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,52 +269,74 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 75%;
-    height: 75%;
+    width: 74%;
+    height: 74%;
     border-radius: 7%;
     border-left: 3px solid var(--main-color);
     border-right: 3px solid var(--main-color);
+    border-top: 4px solid var(--black);
+    border-bottom: 4px solid var(--black);
 }
 
-.apple {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    background: url(/images/apple-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 60px;
-}
-
-.apple_img {
+.apple-img {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items:center ;
 }
 
-.apple_img img {
+.apple-img img {
     width: 90%;
     border-radius: 50%;
-    border: 2px solid var(--main-color);
 }
 
-.apple_img .circle-spin {
+.apple-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
+    width: 96%;
+    height: 96%;
     border-radius: 50%;
-    border-top: 2px solid var(--main-color);
-    border-bottom: 2px solid var(--main-color);
+    border-top: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+    border-left: 3px solid var(--black);
+    border-right: 3px solid var(--black);
+    animation: aboutSpinner 8s linear infinite;
 }
+
+.linux-img {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.linux-img img {
+    width: 70%;
+    border-radius: 6%;
+}
+
+.linux-img .square-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 74%;
+    height: 77%;
+    border-radius: 7%;
+    border-left: 3px solid var(--linux);
+    border-right: 3px solid var(--linux);
+    border-top: 4px solid var(--black);
+    border-bottom: 4px solid var(--black);
+}
+
 
 .btn-box.btns {
 display: inline-block;
@@ -354,6 +378,13 @@ width: 150px;
         opacity: 0;
     }
 }
+
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 
 .footer {
     top: 0;
