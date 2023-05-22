@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function() {
-  if (window.pageYOffset > 200) {
+  if (window.pageYOffset > 50) {
       document.querySelector('.scroll-top')
           .classList.add('show');
   } else {
@@ -23,5 +23,5 @@ window.onload = function () {
 
 window.onscroll = () => {
   let header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 100);
+  header.classList.toggle('sticky', window.scrollY > 50);
 }
