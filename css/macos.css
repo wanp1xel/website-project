@@ -214,7 +214,7 @@ section {
     max-height: 0;
     overflow: hidden; 
     position: relative;
-    background-color: #7d0606 ;
+    background-color: #820707cc ;
     transition: 650ms;
 }
 
@@ -232,7 +232,7 @@ section {
 
 .answer p{
     color: rgba(255, 255, 255, 0.901);
-    font-size: 15px;
+    font-size: 16px;
     padding: 15px;
     line-height: 23px;
 }
