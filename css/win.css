@@ -14,7 +14,7 @@
    --second-bg-color: #112e42;
    --text-color:#ededed;
    --main-color: #00abf0;
-   --linux: #DC461D;
+   --linux: #87a555;
    --black: #000;
 }
 
@@ -182,7 +182,7 @@ section {
 }
 
 .accordion-item {
-    background-color: 	#02026a	;
+    background-color: 	#102e52	;
     border-radius: .4rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -193,7 +193,7 @@ section {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.905);
     text-decoration: none;
-    background-color: 	#02026a	;
+    background-color: 	#102e52	;
     width: 100%;
     display: flex;
     align-items: center;
@@ -214,7 +214,7 @@ section {
     max-height: 0;
     overflow: hidden; 
     position: relative;
-    background-color: #06064b ;
+    background-color: #174276 ;
     transition: 650ms;
 }
 
