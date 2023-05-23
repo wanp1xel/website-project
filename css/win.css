@@ -236,20 +236,31 @@ section {
     line-height: 23px;
 }
 
-.accordion-item:target .answer {
+
+.accordion-item.active .answer {
     max-height: 1000px;
-}
-
-.accordion-item:target .accordion-link .ion-md-add {
+  }
+  
+  .accordion-item:not(.active) .answer {
+    max-height: 0;
+  }
+  
+  .accordion-item:not(.active) .accordion-link .ion-md-add {
     display: block;
-}
-
-.accordion-item:target .accordion-link .ion-md-remove {
+  }
+  
+  .accordion-item.active .accordion-link .ion-md-add {
     display: none;
-}
-
-
-
+  }
+  
+  .accordion-item.active .accordion-link .ion-md-remove {
+    display: block;
+  }
+  
+  .accordion-item:not(.active) .accordion-link .ion-md-remove {
+    display: none;
+  }
+  
 
 
 .footer {
