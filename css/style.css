@@ -12,7 +12,7 @@
 :root {
    --bg-color:  #081b29;
    --second-bg-color: #112e42;
-   --text-color:#ededed;
+   --text-color:#ffffffed;
    --main-color: #00abf0;
    --linux: #87a555;
    --black: #000;
@@ -50,8 +50,8 @@ header {
 nav a {
     padding: 5px 7px;
     font-weight: bold;
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.7);
+    /*color: #ccc;*/
+    color: rgba(255, 255, 255, 0.8);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
