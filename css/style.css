@@ -515,6 +515,7 @@ width: 150px;
 .about{
     width: 100%;
     padding: 78px 0px;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(8,27,41,1) 100%);
 }
 
 .main{
