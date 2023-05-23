@@ -241,11 +241,11 @@ section {
 }
 
 .accordion-item:target .accordion-link .ion-md-add {
-    display: none;
+    display: block;
 }
 
 .accordion-item:target .accordion-link .ion-md-remove {
-    display: block;
+    display: none;
 }
 
 

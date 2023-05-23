@@ -221,7 +221,7 @@ section {
     opacity: .8;
 }
 
-.OS {
+.windows {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,6 +278,18 @@ section {
     border-bottom: 4px solid var(--black);
 }
 
+.apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background: url(/images/mac-os-logo-wp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
 .apple-img {
     position: relative;
     width: 200px;
@@ -298,14 +310,26 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 96%;
-    height: 96%;
+    width: 92%;
+    height: 92%;
     border-radius: 50%;
     border-top: 3px solid var(--text-color);
     border-bottom: 3px solid var(--text-color);
     border-left: 3px solid var(--black);
     border-right: 3px solid var(--black);
     animation: aboutSpinner 8s linear infinite;
+}
+
+.linux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background: url(/images/lin-wp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
 }
 
 .linux-img {
@@ -328,8 +352,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 74%;
-    height: 77%;
+    width: 73%;
+    height: 76%;
     border-radius: 7%;
     border-left: 3px solid var(--linux);
     border-right: 3px solid var(--linux);
