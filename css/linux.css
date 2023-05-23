@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+    background: #0f4f05d5;
     color: var(--text-color);
 }
 
@@ -36,7 +36,7 @@ header {
     left: 0;
     width: 100%;
     padding: 8px 7%;
-    /*background: rgb(0, 0, 0, .8);*/
+    background: rgb(0, 0, 0, .8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,14 +44,14 @@ header {
     transition: .3s;
 }
 
-.header.sticky {
+/* .header.sticky {
     background: rgb(0, 0, 0, .8);
-}
+} */
 
 nav a {
     padding: 5px 7px;
     font-weight: bold;
-    /*color: #ccc;*/
+    color: #ccc;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 14px;
@@ -167,8 +167,6 @@ section {
 
 
 section {
-    background: rgb(8,27,41);
-    background: radial-gradient(circle, rgba(8,27,41,1) 0%, rgba(19,75,119,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,18 +180,18 @@ section {
 }
 
 .accordion-item {
-    background-color: 	#02026a	;
+    background-color: 	#0d8e2f	;
     border-radius: .4rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    box-shadow: .5rem .2rem .5rem rgba(0, 0, 0, 0.507);
+    box-shadow: .5rem .2rem .5rem rgba(0, 0, 0, 0.504);
 }
 
 .accordion-link {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.905);
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: 	#02026a	;
+    background-color: 	#0d8e2f	;
     width: 100%;
     display: flex;
     align-items: center;
@@ -214,7 +212,7 @@ section {
     max-height: 0;
     overflow: hidden; 
     position: relative;
-    background-color: #06064b ;
+    background-color: #06570a ;
     transition: 650ms;
 }
 
@@ -223,7 +221,7 @@ section {
     position: absolute;
     width: .6rem;
     height: 93%;
-    background-color: #ecfd00;
+    background-color: #185fbc;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
