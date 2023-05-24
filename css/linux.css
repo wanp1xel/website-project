@@ -356,7 +356,7 @@ section {
   }
 
   .loaded_hiding .preloader {
-    transition: 2.5s opacity;
+    transition: 1.5s opacity;
     opacity: 0;
   }
   
