@@ -231,7 +231,7 @@ section {
 
 .answer p{
     color: rgba(255, 255, 255, 0.901);
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 15px;
     line-height: 23px;
 }
